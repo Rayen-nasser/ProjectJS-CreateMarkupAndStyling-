@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="todo-container">
+        <div class="add-task">
+            <input type="text">
+            <span class="plus">+</span>
+        </div>
+        <div class="tasks-content">
+            <span class="no-tasks-message">No Tasks To Show</span>
+        </div>
+    </div>
+    <div class="task-stats">
+        <div class="tasks-count">
+            Tasks <span>0</span>
+        </div>
+        <div class="tasks-completed">
+            completed <span>0</span>
+        </div>
+    </div>
+    <div class="justify-center flex">
+        <input type="button" value="RemoveAllTask" class="remove float-right mr-44 p-3  bg-teal-500 cursor-pointer rounded-md text-blue-50 hover:scale-110 transition-all ease-in animate-none">
+        <input type="button" value="FinishAllTask" class="finish float-left ml-44 p-3 bg-teal-500 cursor-pointer rounded-md text-blue-50  hover:scale-110 transition-all ease-in animate-none">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
